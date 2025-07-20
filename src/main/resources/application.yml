@@ -1,0 +1,12 @@
+server:
+  port: ${SERVER_PORT:8787}
+spring:
+  application:
+    name: ${APPLICATION_NAME:service-registry}
+
+  data:
+    redis:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT}
+      password: ${REDIS_PASSWORD}
+      database: ${REDIS_DATABASE:0}
